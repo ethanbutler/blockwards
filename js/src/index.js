@@ -5,11 +5,12 @@ import App from './AppWithNetwork'
 import Standalone from './lib/standalone'
 import registerSharedBlock from './lib/shared'
 
+// Block configuration
 const config = {
-  label: 'Album',
-  namespace: 'blockwards',
-  shortcode: 'album',
-  initialAttributes: {
+  label: 'Album', // UI label
+  namespace: 'blockwards', // Needed for Gutenberg
+  shortcode: 'album', // Plugin slug
+  initialAttributes: { // Default attributes
     title: '',
     artist: '',
     description: '',
@@ -19,6 +20,7 @@ const config = {
 
 registerSharedBlock(App, config)
 
+// Mount our application on single album CPT
 if(
   document.querySelector('body').classList.contains('post-type-albums') &&
   window.location.href.includes('post.php')
