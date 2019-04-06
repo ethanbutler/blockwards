@@ -3,7 +3,7 @@ Demo for WordCamp Raleigh 2019
 
 ## Installation
 
-(The following assume you're in a local development environment such as [Local by Flywheel](https://localbyflywheel.com/)
+(The following assume you're in a local development environment such as [Local by Flywheel](https://localbyflywheel.com/))
 
 `git clone` this repository into `wp-content/plugins`. `cd` into the directory.
 
