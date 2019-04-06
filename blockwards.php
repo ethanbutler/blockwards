@@ -1,10 +1,13 @@
 <?php
 
+// Code for Spotify authentication
 include 'inc/auth.php';
 
 /**
  * Plugin Name: Blockwards Demo
  */
+
+// Register our custom post type and meta fields
 add_action('init', function() {
   register_post_type('albums', [
     'labels' => [
@@ -31,6 +34,7 @@ add_action('init', function() {
   ]);
 });
 
+// Enqueue our JS bundle and make authentication tokens available
 add_action('admin_enqueue_scripts', function() {
   wp_register_script(
     'blockward-js',
@@ -52,6 +56,7 @@ add_action('admin_enqueue_scripts', function() {
   wp_enqueue_script('blockward-js');
 });
 
+// Register a div for our TinyMCE React app to mount on
 add_action('media_buttons', function() {
   ?>
     <div data-shortcode="album"></div>
