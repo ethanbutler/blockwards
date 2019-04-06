@@ -17,6 +17,8 @@ In order to use the Spotify app, you'll need to [register](https://developer.spo
 
 Inside of your application, make sure you add `[SITE URL]/wp-admin/options-general.php?page=spotify-auth` as a Redirect URI.
 
+<img width="546" alt="Screen Shot 2019-04-06 at 10 31 25 AM" src="https://user-images.githubusercontent.com/3719099/55670858-4c7a6700-5857-11e9-9c57-f60ec5bd0cd6.png">
+
 ## Instructions
 1. Plugins > Blockwards > Activate
 2. Settings > Spotify Auth
